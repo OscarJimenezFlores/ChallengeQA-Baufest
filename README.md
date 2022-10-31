@@ -43,3 +43,6 @@ livingdoc test-assembly .\reto02.Tests\bin\Debug\net6.0\reto02.Tests.dll -t .\re
 ---
 6. Finalmente podrá visualizar los resultados en los archivos reto01.html y reto02.html, ubicados en la raíz de la solución.
 
+Ejemplo.
+[![capture-Reto01.png](https://i.postimg.cc/4xzKTjrG/capture-Reto01.png)](https://postimg.cc/pmLVfcWc)
+
