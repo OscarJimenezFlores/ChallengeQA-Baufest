@@ -40,3 +40,4 @@ livingdoc test-assembly .\reto01.Tests\bin\Debug\net6.0\reto01.Tests.dll -t .\re
 ```bash
 livingdoc test-assembly .\reto02.Tests\bin\Debug\net6.0\reto02.Tests.dll -t .\reto02.Tests\bin\Debug\net6.0\TestExecution.json -o reto02.html
 ```
+
