@@ -1,36 +1,37 @@
-## Pruebas: Reporte de ejecución BDD ##
+## BaufestTests Automation ##
+
+Challenge empleando diversas tecnologías para la automatización BDD
 
 ---
-1. clonar repositorio
+1. clonar repositorio:
 
 ```bash
-git clone
+git clone https://github.com/OscarJimenezFlores/ChallengeQA-Baufest.git
 ```
 
-2. restaurar
+---
+2. restaurar estando dentro del proyecto (cd nombre_proyecto):
 
 ```bash
-cd nombre_proyecto
 dotnet restore
+
 ```
-
-
 ---
-Adicionalmente para generar utilizaremos la herramienta LivingDoc mediante linea de comandos para eso instalamos la herramienta con el siguiente comando:
+3. Ejecutar la siguiente línea de comando para instalar y utilizar LivingDoc:
 
 ```bash
 dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
 ```
 
 ---
-Ejecutamos las pruebas, lo cual generará un archivo TestExecution.json, el cual contiene los resultados de la ejecución de las pruebas:
+4. Ejecutar las pruebas, lo cual generará un archivo TestExecution.json, el cual contiene los resultados:
 
 ```bash
 dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=..\Cobertura\
 ```
 
 ---
-Generamos el reporte de ejecución de pruebas utilizando el archivo de resultados anteriormente mencionado y utilizando la libreria (DLL) generada por la compilación de las pruebas:
+5. Se genera el reporte de ejecución de pruebas utilizando el archivo de resultados anteriormente mencionado y utilizando la libreria (DLL) generada por la compilación de las pruebas:
 
 ```bash
 livingdoc test-assembly .\reto01.Tests\bin\Debug\net6.0\reto01.Tests.dll -t .\reto01.Tests\bin\Debug\net6.0\TestExecution.json -o reto01.html
